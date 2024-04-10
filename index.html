@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="app">{{ titulo }}</div>
+    <script src="https://unpkg.com/vue@3/dist/vue.global.js"></script>
+    <script>
+        //DECLARAMOS UNA INSTANCIA DE VUE
+        const vm = Vue.createApp({
+            data(){
+                //RETORNAMOS LAS VARIABLES DE ESTA INSTANCIA
+                return{
+                    titulo : "Hola Mundo"
+                };
+            }
+            //MONTAMOS NUESTRA INSTANCIA EN EL ID APP DE NUESTRO HTML
+        }).mount("#app");
+    </script>
+</body>
+</html>
